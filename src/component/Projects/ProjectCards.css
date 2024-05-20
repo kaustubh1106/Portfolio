@@ -1,0 +1,44 @@
+.projectsCard{
+    background-color: #4B4B4B;
+    color: white;
+    padding: 0;
+}
+.btn{
+    padding: 10px;
+    background-color: #b66d34;
+    border: none;
+    border-radius: 10px;
+}
+.projects-card{
+    background-color: #1d1c20;
+    max-width: 310px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.projects-card:hover{
+    transform: scale(1.01);
+    transition: 0.5s ease-in-out ;
+    background-color: #C7D59F;
+    color: black;
+}
+
+.projects-card-img-top{
+    width: 100%;
+    border-top: 10px;
+    
+}
+.projects-btn{
+    text-decoration: none;
+    color: #4B4B4B;
+}
+.projects-card-title a{
+    font-weight: 500;
+    text-decoration: none;
+    color: inherit;
+}
+
+.projects-card-body{
+    padding: 20px 30px;
+    text-align: left;
+}

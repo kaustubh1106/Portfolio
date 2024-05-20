@@ -1,0 +1,32 @@
+#projects{
+    padding:10px 76px
+}
+.projectDetail{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0px;
+}
+.project-look-at-my-pro{
+    font-size: 32px;
+}
+.projects-pro{
+    font-size: 38px;
+    font-weight: 500;
+    background-image: linear-gradient(#C7D59F, #0F1314);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+.projects-domain-btn{
+    padding: inherit 0px;
+}
+.projects-domain-btn button{
+    color: white;
+    border: none;
+    padding: 4px 20px;
+}
+.ptojects-toggle-button:hover {
+    border-radius: 10px;
+    background-color: #3d4041;
+}
+

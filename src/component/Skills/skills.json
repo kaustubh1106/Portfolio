@@ -1,0 +1,65 @@
+[
+    {
+        "name":"Javascript",
+        "percent":"80",
+        "path":"../../asset/logo.png"
+    },
+    {
+        "name":"Rust",
+        "percent":"30",
+        "path":"../../asset/logo.png"
+    },
+    {
+        "name":"Solidity",
+        "percent":"90",
+        "path":"../../asset/Solidity-Logo.wine.svg"
+    },
+    {
+        "name":"truffle",
+        "percent":"90",
+        "path":"../../asset/Solidity-Logo.wine.svg"
+        
+    },
+    {
+        "name":"HTML",
+        "percent":"70",
+        "path":"../../asset/Solidity-Logo.wine.svg"
+        
+    },
+    {
+        "name":"CSS",
+        "percent":"70",
+        "path":"../../asset/logo.png"
+    },
+    {
+        "name":"React",
+        "percent":"80",
+        "path":"../../asset/logo.png"
+    },
+
+    {
+        "name":"NodeJS",
+        "percent":"70",
+        "path":"../../asset/logo.png"
+    },
+    {
+        "name":"Express",
+        "percent":"70",
+        "path":"../../asset/logo.png"
+    },
+    {
+        "name":"MongoDB",
+        "percent":"60",
+        "path":"../../asset/logo.png"
+    },
+    {
+        "name":"Bootstrap",
+        "percent":"50",
+        "path":"../../asset/logo.png"
+    },
+    {
+        "name":"MySQL",
+        "percent":"50",
+        "path":"../../asset/logo.png"
+    }
+]
