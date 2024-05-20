@@ -140,6 +140,7 @@
   transition: visibility 0s, opacity 1s linear;
 }
 .skill-icon:hover + .skill-bar-popover{
+  transition: 0.4s;
   visibility: visible;
   opacity: 1;
 }

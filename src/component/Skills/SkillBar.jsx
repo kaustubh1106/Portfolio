@@ -1,9 +1,7 @@
 import React from 'react'
 import "./SkillBar.css"
 function SkillBar({skill}) {
-    // console.log("yehh hai skill vala pageha ")
-    // const imagePath = require(`${skill.path}`).default;
-    console.log(skill[0])
+    // console.log(skill)
   return (
     <div className='skillBar'>
       <div className="skillNames">

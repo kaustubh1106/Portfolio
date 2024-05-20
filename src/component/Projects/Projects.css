@@ -30,3 +30,55 @@
     background-color: #3d4041;
 }
 
+.project-glass{
+    padding-top: 20px;
+    max-width: 640px;
+    height: 640px;
+    overflow: scroll;
+    scrollbar-color: var(--primary-color) transparent;
+    display: grid;
+    grid-template-columns: 290px 290px;
+    gap:20px;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(4px);
+    border: 2px solid #3d4041;
+    border-radius: 20px;
+    position: relative;
+}
+
+.project-glass-outer{
+    padding: 0;
+    margin: 0;
+    max-width: 640px;
+    position: relative;
+}
+.project-glass-outer::after{
+    content: "";
+    width: 106px;
+    height: 106px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    transform: translate(calc(50% + 75px), calc(-50% + 115px)) rotate(45deg);
+    
+    background: conic-gradient(transparent 0deg 135deg,rgba(255, 255, 255, 0.12) 135deg 315deg,transparent 315deg 360deg);
+    /* background-color: rgba(255, 255, 255, 0.12); */
+    backdrop-filter: blur(4px);
+    box-shadow: none;
+}
+.project-info{
+    position: absolute;
+    height: 350px;
+    min-width: 580px;
+    max-width: 920px;
+    background-color: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(8px);
+    right: calc(-100% - 15px);
+    top: 0;
+    border-radius: 14px;
+    border: 2px solid#3d4041;
+    z-index: 2;
+}

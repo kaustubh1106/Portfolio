@@ -11,6 +11,8 @@
 }
 .projects-card{
     background-color: #1d1c20;
+    /* margin: 13px; */
+    min-width: 240px;
     max-width: 310px;
     overflow: hidden;
     border-radius: 20px;

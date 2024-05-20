@@ -65,7 +65,7 @@
 }
 .skillProgress{
     width: 90%;
-    animation: skillProgress 3s;
+    animation: skillProgress 1s;
 }
 
 @keyframes skillProgress {
