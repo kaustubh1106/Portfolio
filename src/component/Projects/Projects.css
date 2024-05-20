@@ -31,7 +31,7 @@
 }
 
 .project-glass{
-    padding-top: 20px;
+    padding: 20px 20px 0 20px;
     max-width: 640px;
     height: 640px;
     overflow: scroll;
@@ -84,3 +84,55 @@
     z-index: 2;
 }
 
+.Project-message{
+    /* background-color: red; */
+    width: 75%;
+    height: 278px;
+    background-color: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(8px);
+    border: 2px solid#3d4041;
+}
+
+.project-data{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+.Project-message-inner{
+    display: flex;
+    /* width: 50% */
+    width: 580px;
+}
+.Project-message{
+    text-align: center;
+    align-self: last baseline;
+    /* clip-path: polygon(25% 0, 100% 0%, 100% 100%, 0 100%, 0% 50%); */
+    border-radius: 10px;
+    position: relative;
+}
+.Project-message h3{
+    font-size: 24px;
+    background-image: linear-gradient(var(--primary-color), var(--bg-color));
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+.send-icon{
+    padding: 5px 10px;
+    width: fit-content;
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+    border-radius: 10px;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+.text{
+    width: 90%;
+    height: 70%;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.009);
+    backdrop-filter: blur(10px);
+    border: none;
+    color: aliceblue;
+}

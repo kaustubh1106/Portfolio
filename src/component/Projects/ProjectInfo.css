@@ -1,11 +1,11 @@
 .project-info-relative{
-    color: var(--primary-color);
+    color: white;
     height: fit-content;
     position: relative;
     
 }
 .project-info-name-links{
-
+    color: var(--primary-color);
     position: sticky;
     display: flex;
     align-items: center;

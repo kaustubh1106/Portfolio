@@ -4,6 +4,7 @@ import Intro from './component/Intro/Intro';
 import Skills from "./component/Skills/Skills.jsx"
 import Cursor from './component/Cursor/Cursor.jsx';
 import Projects from "./component/Projects/Projects.jsx"
+import Experience from './component/Experience/Experience.jsx';
 function App() {
   return (
     <div className="App">
@@ -12,6 +13,7 @@ function App() {
       <Intro/>
       <Skills/>
       <Projects/>
+      <Experience/>
     </div>
   );
 }
