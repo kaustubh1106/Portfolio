@@ -2,14 +2,14 @@
 
 
 :root {
-    --primary-color: #C7D59F;
+    --primary-color:#48d3e5;   
     --bg-color: #0F1314;
     --text-color: white;
     --text-color-bg: black;
     --card-bg-color: #1d1c20;
     --list-bg-color: #272b2c;
 }
-
+/*   #C7D59F */
 *{
     margin: 0;
     padding: 0;

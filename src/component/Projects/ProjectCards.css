@@ -3,17 +3,12 @@
     color: white;
     padding: 0;
 }
-.btn{
-    padding: 10px;
-    background-color: #b66d34;
-    border: none;
-    border-radius: 10px;
-}
+
 .projects-card{
     background-color: #1d1c20;
     /* margin: 13px; */
-    min-width: 240px;
-    max-width: 310px;
+    /* min-width: 240px; */
+    width: 240px;
     overflow: hidden;
     border-radius: 20px;
 }
@@ -21,7 +16,7 @@
 .projects-card:hover{
     transform: scale(1.01);
     transition: 0.5s ease-in-out ;
-    background-color: #C7D59F;
+    background-color: var(--primary-color);
     color: black;
 }
 
@@ -43,4 +38,13 @@
 .projects-card-body{
     padding: 20px 30px;
     text-align: left;
+}
+
+.activeProject{
+    transform: scale(1.02);
+    background-color: var(--primary-color);
+    /* background-image: linear-gradient(var(--list-bg-color),transparent); */
+    color: black;
+    /* border-radius: 100px; */
+    padding: 10px;
 }

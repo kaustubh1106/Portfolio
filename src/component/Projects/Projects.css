@@ -13,7 +13,7 @@
 .projects-pro{
     font-size: 38px;
     font-weight: 500;
-    background-image: linear-gradient(#C7D59F, #0F1314);
+    background-image: linear-gradient(var(--primary-color), var(--bg-color));
     color: transparent;
     -webkit-background-clip: text;
 }
@@ -72,8 +72,9 @@
 .project-info{
     position: absolute;
     height: 350px;
-    min-width: 580px;
-    max-width: 920px;
+    width: 580px;
+    /* max-width: 920px; */
+    
     background-color: rgba(255, 255, 255, 0.12);
     backdrop-filter: blur(8px);
     right: calc(-100% - 15px);
@@ -82,3 +83,4 @@
     border: 2px solid#3d4041;
     z-index: 2;
 }
+

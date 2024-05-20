@@ -1,8 +1,13 @@
-import React from 'react'
+import React,{useState} from 'react'
 import "./Projects.css"
 import Projectsjson from "./project.json"
 import ProjectCards from './ProjectCard.jsx'
+import ProjectInfo from './ProjectInfo'
 const Projects = () => {
+    // activeProject konsa hai vo set karna hai click karne par
+    const [activeProject, setactiveProject] = useState(0) 
+    
+    
     return (
         <section id="projects">
             <div className="projectDetail">
@@ -15,14 +20,23 @@ const Projects = () => {
                 </div>
             </div>
             <div className="project-glass-outer">
-                <div className="project-info">{/*is div me project ka desc aur info lagani h*/}</div>
+                <ProjectInfo projectdetail={Projectsjson[activeProject]}/>
                 <div className="project-glass">
 
                     {
 
-                        Projectsjson.map((project1) => (
+                        Projectsjson.map((project1,index) => (
+                            
+                            <div 
+                            className="projectcard"
+                            onClick={()=>{
+                                console.log(index)
+                                setactiveProject(index)
 
-                            <ProjectCards project={project1} />
+                            }}>
+                                <ProjectCards project={project1} index={index} acproject = {activeProject} />
+
+                            </div>
 
                         ))
                     }

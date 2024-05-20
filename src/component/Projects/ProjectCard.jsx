@@ -2,12 +2,11 @@ import React from 'react'
 import "./ProjectCards.css"
 import gym from "../../asset/image.png"
 import { Link } from 'react-scroll'
-const ProjectCard = ({project}) => {
-    
-    
+
+const ProjectCard = ({project,index,acproject}) => {
   return (
     <div>
-       <div className="projects-card " style={{ width: "18rem" }}>
+       <div className={`projects-card ${acproject===index ? 'activeProject' : ''}`} style={{ width: "18rem" }}>
                 <img src={gym} className="projects-card-img-top" alt="..." />
                 <div className="projects-card-body">
                     <h3 className="projects-card-title"><Link href=''>{project.name}</Link></h3>
