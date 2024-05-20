@@ -1,6 +1,5 @@
 import React from 'react'
 import "./SkillBar.css"
-import logo from "../../asset/Solidity-Logo.wine.svg"
 function SkillBar({skill}) {
     // console.log("yehh hai skill vala pageha ")
     // const imagePath = require(`${skill.path}`).default;
