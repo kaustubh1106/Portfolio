@@ -1,6 +1,6 @@
 import React, { useState, useEffect,useCallback } from 'react'
 import githublink from "../../asset/link.svg"
-import playButton from "../../asset/play.svg"
+
 import projectjson from "./project.json"
 import expjson from "./experience.json"
 import "./all.css"
@@ -12,7 +12,7 @@ const ALL = () => {
     // Logic for changing the active state
     const [activeTab, setActiveTab] = useState('all');
     const [currTabProject, setcurrTabProject] = useState([])
-    const [songTime, setsongTime] = useState("46")
+    // const [songTime, setsongTime] = useState("46")
     const [audio, setaudio] = useState()
     const setsudioelement = async ()=>{
         const _audio = new Audio(song)
@@ -33,12 +33,12 @@ const ALL = () => {
     const handleplay =async ()=>{
         const progressBar = document.getElementById("exp-song-progress")
         const icon = document.querySelector(".fa-regular")
-        const progress = (songTime/audio.duration)*100
+        const progress = (46/audio.duration)*100
         progressBar.setAttribute("value",progress)
         if(audio.paused ){
             icon.classList.remove('fa-circle-play')
             icon.classList.add("fa-circle-pause")
-            audio.currentTime = songTime
+            audio.currentTime = 46
             audio.play()
         }
         else{
