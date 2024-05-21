@@ -1,9 +1,10 @@
 #intro{
     display: flex;
     align-items: center;
-    margin: 0 auto;
+    justify-content: space-between;
     overflow: hidden;
-    padding-right: 240px;
+    /* background-color: red; */
+    padding: 65px 76px;
 }
 
 
@@ -15,7 +16,7 @@
 }
 .introContent{
     text-align: left;
-    padding: 220px 190px;
+    /* padding: 220px 190px; */
     font-size: 3rem;
     display: flex;
     flex-direction: column;

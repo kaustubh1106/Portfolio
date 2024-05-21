@@ -6,6 +6,18 @@
 .skills-tag{
   padding: 0px 76px;
 }
+.project-look-at-my-pro{
+  font-size: 32px;
+}
+
+.projects-pro{
+  font-size: 38px;
+  font-weight: 500;
+  background-image: linear-gradient(var(--primary-color), var(--bg-color));
+  color: transparent;
+  -webkit-background-clip: text;
+}
+
 .skills-random{
 
   /* height: 500px; */

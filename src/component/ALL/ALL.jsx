@@ -4,8 +4,7 @@ import playButton from "../../asset/play.svg"
 import projectjson from "./project.json"
 import expjson from "./experience.json"
 import "./all.css"
-import AudioPlayer from 'react-h5-audio-player';
-import 'react-h5-audio-player/lib/styles.css';
+
 import song from "./song.mp3"
 
 const ALL = () => {
@@ -13,7 +12,12 @@ const ALL = () => {
     // Logic for changing the active state
     const [activeTab, setActiveTab] = useState('all');
     const [currTabProject, setcurrTabProject] = useState([])
-
+    const [songTime, setsongTime] = useState("46")
+    const [audio, setaudio] = useState()
+    const setsudioelement = async ()=>{
+        const _audio = new Audio(song)
+        setaudio(_audio)
+    }
     const currproject = useCallback(() => {
         if (activeTab === 'all') {
             setcurrTabProject(projectjson);
@@ -27,17 +31,31 @@ const ALL = () => {
     }, [activeTab, currTabProject]);
 
     const handleplay =async ()=>{
-        const playSide = document.querySelector(".rhap_play-pause-button")
-        playSide.click();
-
-        console.log(playSide)
+        const progressBar = document.getElementById("exp-song-progress")
+        const icon = document.querySelector(".fa-regular")
+        const progress = (songTime/audio.duration)*100
+        progressBar.setAttribute("value",progress)
+        if(audio.paused ){
+            icon.classList.remove('fa-circle-play')
+            icon.classList.add("fa-circle-pause")
+            audio.currentTime = songTime
+            audio.play()
+        }
+        else{
+            audio.pause();
+            icon.classList.remove('fa-circle-pause')
+            icon.classList.add("fa-circle-play")
+        }
     }
 
     // Update progress bar
     useEffect(() => {
         currproject()
     }, [currproject]);
-
+    useEffect(() => {
+        setsudioelement()
+    }, [])
+    
 
     return (
         <div id="projects" className="section-one">
@@ -108,34 +126,28 @@ const ALL = () => {
 
 
                 <div className="item item4 ">
-                    <p className="education workexperience">Education</p>
-                    <div className="combine">
+                    <p className="exp-education workexperience">Education</p>
+                    <div className="exp-combine">
                         <p className="timing">2021-25</p>
                         <p className="projectname degree">Bachelor's of Technology(CSE)</p>
-                        <p className="college">Indian Institute of Information Technology Una</p>
+                        <p className="exp-college">Indian Institute of Information Technology Una</p>
                         <p className="cgpa">CGPA: 7.25</p>
                     </div>
                 </div>
 
                 <div className="item item5">
                     <div className="outer">
-                        <div className="inner">
-                            <p className="education workexperience track">Current Fav. track</p>
+                        <div className="exp-inner">
+                            <p className="exp-education workexperience track">Current Fav. track</p>
                             <div className="music_player">
                                 <p className="song_name">Hai junoon</p>
-                                <progress id="file" value="32" max="100">
-                                    32%
-                                </progress>
+                                <input type="range"  min = "0" max="100" id="exp-song-progress"/>
+                                
                                 <br />
-                                <img src={playButton} className='fa-solid fa-play musicbutton' onClick={handleplay} alt=""></img>
-                                <div className="audio-exp">
-                                    <AudioPlayer
-                                        autoPlay
-                                        src={song}
-                                        onPlay={e => console.log("onPlay")}
-                                    // other props here
-                                    />
-                                </div>
+                                <i className="fa-regular fa-circle-play fa-2xl" onClick={handleplay} ></i>
+                                {/* <i className="fa-thin fa-circle-play" onClick={handleplay}></i> */}
+                                {/* <img src={playButton} className='fa-solid fa-play musicbutton'  alt=""></img> */}
+                                
                             </div>
                         </div>
                     </div>
