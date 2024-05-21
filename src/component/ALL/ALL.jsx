@@ -4,9 +4,13 @@ import playButton from "../../asset/play.svg"
 import projectjson from "./project.json"
 import expjson from "./experience.json"
 import "./all.css"
+import AudioPlayer from 'react-h5-audio-player';
+import 'react-h5-audio-player/lib/styles.css';
+import song from "./song.mp3"
+
 const ALL = () => {
     const [isPlaying, setIsPlaying] = useState(false);
-
+    const [source, setsource] = useState("")
     // Logic for changing the active state
     const [activeTab, setActiveTab] = useState('all');
     const [currTabProject, setcurrTabProject] = useState([])
@@ -25,37 +29,16 @@ const ALL = () => {
         console.log(currTabProject)
     }
 
+    const handleplay =async ()=>{
+        const playSide = document.querySelector(".rhap_play-pause-button")
+        playSide.click();
 
-    const handlePlayPause = () => {
-        const audio = new Audio("/Users/miteshsingla/Documents/portfolio/public/audio.mp3");
-        setIsPlaying(prevState => !prevState);
-        if (!isPlaying) {
-            audio.play();
-        } else {
-            audio.pause();
-        }
-    };
+        console.log(playSide)
+    }
 
     // Update progress bar
     useEffect(() => {
         currproject()
-        //     const bar = document.querySelector("#file");
-        //     const audio = new Audio('music.mp3');
-
-        //     const updateProgressBar = () => {
-        //         const progress = Math.floor((audio.currentTime / audio.duration) * 100);
-        //         if (!isNaN(progress) && isFinite(progress)) {
-        //             bar.value = progress;
-        //         } else {
-        //             // Handle non-finite progress values
-        //             console.error("Progress value is not finite.");
-        //         }
-        //     };
-
-        //     const interval = setInterval(updateProgressBar, 1000);
-
-        //     return () => clearInterval(interval);
-        // }
     }, [activeTab]);
 
 
@@ -67,20 +50,20 @@ const ALL = () => {
                         <h2 className="Projects">Projects</h2>
                     </div>
                     <div className="selection">
-                        <div className={`stream ${activeTab === "all" ? "exp-active" : "exp-nonactive"}`} onClick={() => {
+                        <div className={`exp-choice ${activeTab === "all" ? "exp-active" : "exp-nonactive"}`} onClick={() => {
                             setActiveTab('all')
                         }}>
-                            <p className="UI streamcontent">All</p>
+                            <p className=" exp-choice-name">All</p>
                         </div>
-                        <div className={`stream ${activeTab === "blockchain" ? "exp-active" : "exp-nonactive"}`} onClick={() => {
+                        <div className={`exp-choice ${activeTab === "blockchain" ? "exp-active" : "exp-nonactive"}`} onClick={() => {
                             setActiveTab('blockchain')
                         }}>
-                            <p className="android streamcontent">Blockchain</p>
+                            <p className=" exp-choice-name">Blockchain</p>
                         </div>
-                        <div className={`stream ${activeTab === "web" ? "exp-active" : "exp-nonactive"}`} onClick={() => {
+                        <div className={`exp-choice ${activeTab === "web" ? "exp-active" : "exp-nonactive"}`} onClick={() => {
                             setActiveTab('web')
                         }}>
-                            <p className="UI streamcontent">Web</p>
+                            <p className=" exp-choice-name">Web</p>
                         </div>
                     </div>
                     {
@@ -105,13 +88,13 @@ const ALL = () => {
 
 
                 {/* ===============================> experience and internship=============> */}
-                <div className="item3">
+                <div className="item item3">
                     <div className="item1container">
                         <h2 className="Projects">Work Experience</h2>
                     </div>
                     <div className="item3-abs">
-                    {
-                        expjson.map((exp) => (
+                        {
+                            expjson.map((exp) => (
                                 <div className="exp-card exp-card-timeline">
                                     <div className="dotted-line"></div>
                                     <div className="projectcontent ">
@@ -120,13 +103,13 @@ const ALL = () => {
                                         <p className="ghub">{exp.duration} months</p>
                                     </div>
                                 </div>
-                        ))
-                    }
+                            ))
+                        }
                     </div>
                 </div>
                 {/* ========================================================================= */}
 
-                
+
                 <div className="item item4 ">
                     <p className="education workexperience">Education</p>
                     <div className="combine">
@@ -142,12 +125,20 @@ const ALL = () => {
                         <div className="inner">
                             <p className="education workexperience track">Current Fav. track</p>
                             <div className="music_player">
-                                <p className="song_name">Hook Raja Ji</p>
+                                <p className="song_name">Hai junoon</p>
                                 <progress id="file" value="32" max="100">
                                     32%
                                 </progress>
                                 <br />
-                                <img src={playButton} className='fa-solid fa-play musicbutton' onClick={handlePlayPause}></img>
+                                <img src={playButton} className='fa-solid fa-play musicbutton' onClick={handleplay}></img>
+                                <div className="audio-exp">
+                                    <AudioPlayer
+                                        autoPlay
+                                        src={song}
+                                        onPlay={e => console.log("onPlay")}
+                                    // other props here
+                                    />
+                                </div>
                             </div>
                         </div>
                     </div>
