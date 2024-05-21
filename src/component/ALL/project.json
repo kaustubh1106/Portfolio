@@ -1,0 +1,47 @@
+[
+    {
+        "name" : "Fit Chain Gram",
+        "desc" : "Fit Chain GRam desc lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum ",
+        "category" : "both",
+        "git" : "",
+        "demo" : "",
+        "problem" : "Fit Chain Gram problem lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum ",
+        "tech": "Node JS , React, Ether JS, Solidity"
+    },
+    {
+        "name" : "DFile Net",
+        "desc" : "DFlie Net description lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ",
+        "category" : "both",
+        "git" : "",
+        "demo" : "",
+        "problem" : "DFile Net problem lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ",
+        "tech":"AES Encryption, Node JS , React, Ether JS, Solidity"
+    },
+    {
+        "name" : "Hidden Brew",
+        "desc" : "hidden brew desc lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem  lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem  lorem ipsum",
+        "category" : "web",
+        "git" : "",
+        "demo" : "",
+        "problem" : " hidden brew problem lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ",
+        "tech":"ReactJS"
+    },
+    {
+        "name" : "Ecommerce",
+        "desc" : "hidden brew desc lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem  lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem  lorem ipsum",
+        "category" : "web",
+        "git" : "",
+        "demo" : "",
+        "problem" : " hidden brew problem lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ",
+        "tech":"NodeJS,MongoDB,Express"
+    },
+    {
+        "name" : "DEX",
+        "desc" : "Fit Chain GRam desc lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum ",
+        "category" : "blockchain",
+        "git" : "",
+        "demo" : "",
+        "problem" : "Fit Chain Gram problem lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum ",
+        "tech": " React, Ether JS, Solidity"
+    }
+]
