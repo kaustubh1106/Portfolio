@@ -164,3 +164,70 @@
   color: transparent;
 
 }
+
+/* Add the following CSS to make the skills section responsive */
+@media screen and (max-width: 768px) {
+  .skills {
+    display: block;
+    padding: 20px; /* Add some padding for better spacing */
+  }
+
+  .skills-container {
+    margin-bottom: 20px; /* Add spacing between skill containers */
+    width: 100%; /* Ensure full width */
+  }
+
+  .skill-icon {
+    display: block;
+    margin: 0 auto; /* Center the icons */
+    position: static; /* Reset position */
+    width: 50px; /* Adjust icon size if needed */
+    height: 50px; /* Adjust icon size if needed */
+  }
+
+  .skill-bar-popover {
+    position: static; /* Reset position */
+    text-align: center; /* Center the skill bars */
+    margin-top: 10px; /* Add spacing above skill bars */
+  }
+
+  .paragraph {
+    text-align: center; /* Center the paragraph text */
+    margin-top: 20px; /* Add spacing above the paragraph */
+    padding: 0 10px; /* Add padding for better readability */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .skills {
+    display: block;
+    padding: 10px; /* Reduce padding for smaller screens */
+  }
+
+  .skills-container {
+    margin-bottom: 15px; /* Adjust spacing between skill containers */
+    width: 100%; /* Ensure full width */
+  }
+
+  .skill-icon {
+    display: block;
+    margin: 0 auto; /* Center the icons */
+    position: static; /* Reset position */
+    width: 40px; /* Further adjust icon size if needed */
+    height: 40px; /* Further adjust icon size if needed */
+  }
+
+  .skill-bar-popover {
+    position: static; /* Reset position */
+    text-align: center; /* Center the skill bars */
+    margin-top: 8px; /* Adjust spacing above skill bars */
+  }
+
+  .paragraph {
+    width: 60%;
+    text-align: center; /* Center the paragraph text */
+    margin-top: 15px; /* Adjust spacing above the paragraph */
+    padding: 0 5px; /* Adjust padding for better readability */
+    font-size: 14px; /* Adjust font size for better readability */
+  }
+}

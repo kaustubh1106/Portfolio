@@ -36,6 +36,15 @@
         "tech":"NodeJS,MongoDB,Express"
     },
     {
+        "name" : "Medicare health",
+        "desc" : "The Medicare Health is a comprehensive web application designed to streamline hospital operations. It offers functionalities such as patient registration, appointment scheduling, staff management, and medical record tracking. With a user-friendly interface and secure data handling, the system enhances efficiency and improves the overall patient care experience. Deployed using modern technologies for optimal performance and reliability.",
+        "category" : "web",
+        "git" : "https://github.com/kaustubh1106/Hospital_Management_System/",
+        "demo" : "https://medicare-kaustubh.netlify.app/",
+        "problem" : "",
+        "tech":"NodeJS,MongoDB,Express,JWT auth"
+    },
+    {
         "name" : "DEX",
         "desc" : "Fit Chain GRam desc lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum ",
         "category" : "blockchain",

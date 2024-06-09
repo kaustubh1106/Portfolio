@@ -67,3 +67,75 @@
 .desktopMenuBtn i{
     margin-right: 5px;
 }
+
+.menu-toggle {
+    display: none;
+    color: aliceblue;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.desktopMenu.open {
+    display: flex;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        padding: 20px 30px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar-name {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .desktopMenu {
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        align-items: flex-start;
+        padding: 0;
+    }
+    .desktopMenuListItem {
+        margin: 0.5rem 0;
+        font-size: 18px;
+    }
+    .desktopMenuBtn {
+        width: 100%;
+        justify-content: center;
+        padding: 10px;
+    }
+    .menu-toggle {
+        display: block;
+    }
+    .desktopMenu {
+        display: none;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        align-items: flex-start;
+        padding: 0;
+    }
+}
+
+/* Styles for screens smaller than 480px */
+@media screen and (max-width: 480px) {
+    .navbar {
+        padding: 10px 20px;
+    }
+    .navbar-name {
+        font-size: 18px;
+    }
+    .desktopMenu {
+        gap: 15px;
+    }
+    .desktopMenuListItem {
+        font-size: 16px;
+    }
+    .desktopMenuBtn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}

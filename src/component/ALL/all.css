@@ -296,13 +296,6 @@ margin-top: 10px;
   color: rgba(205, 205, 205, 1);
 }
 
-
-
-
-
-
-
-
 #exp-song-progress{
     -webkit-appearance: none;
     width: 90%;
@@ -323,33 +316,131 @@ margin-top: 10px;
     box-shadow: -402px 0 0 400px var(--primary-color);
     
 }
-.music_player i{
-    
-}
 
-
-/* #file {
-
-    width: 90%;
-    height: 5px;
-    color: var(--primary-color);
-}
-
-#file::-webkit-progress-value {
-    background: var(--primary-color);
-    border-right: 5px solid white;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+@media screen and (max-width: 768px) {
+  .containere {
+    grid-template-rows: repeat(12, 1fr);
+    grid-template-columns: repeat(12, 1fr);
+  }
+  
+  .item1,
+  .item2,
+  .item3,
+  .item4{
+    grid-area: auto; /* Reset grid area to allow items to flow vertically */
+    width: 100%; /* Ensure items take full width */
+  }
+  .containere {
+    grid-template-rows: repeat(12, 1fr);
+    grid-template-columns: repeat(12, 1fr);
+  }
+  
+  .item5 {
+    grid-area: auto;
+    width: 100%;
+    margin: 10px 0;
+    padding: 15px;
   }
 
-  #file::-webkit-progress-bar {
-    background: blue;
-    
-    border-radius: 10px;
+  .exp-inner {
+    position: relative;
+    transform: none;
+    height: auto;
+    width: 100%;
+    margin: 0;
+    background: none;
   }
-  #file::-webkit-slider-thumb {
-    background: blue;
-    border-radius: 10px;
+  
+  .music_player {
+    font-size: 14px;
+  }
+
+  #exp-song-progress {
+    width: 100%;
+  }
+
+  .fa-regular {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .containere {
+    grid-template-rows: repeat(12, auto);
+    grid-template-columns: 1fr; /* Single column layout for very small screens */
+    grid-gap: 10px; /* Reduce gap between items */
+  }
+  
+  .item1,
+  .item2,
+  .item4,
+  .item5 {
+    width: 100%; /* Ensure items take full width */
+    padding: 10px; /* Further adjust padding for very small screens */
+  }
+  
+  .exp-inner {
+    padding: 10px;
+  }
+  
+  .music_player {
+    font-size: 12px; /* Smaller font size for very small screens */
+  }
+
+  .fa-regular {
+    font-size: 1.25rem; /* Smaller icon size for very small screens */
+  }
+  
+  .Projects {
+    font-size: 20px; /* Adjust heading font size */
+  }
+  
+  .exp-choice-name {
+    font-size: 16px; /* Adjust choice name font size */
+  }
+  
+  .exp-combine {
+    font-size: 12px; /* Adjust education section font size */
+  }
+  
+  .exp-college {
+    font-size: 12px; /* Adjust college name font size */
+  }
+  
+  .cgpa {
+    font-size: 12px; /* Adjust CGPA font size */
+  }
+  .item3-abs {
+    position: static;
+    width: 100%;
+  }
+  
+  .exp-card-timeline .dotted-line {
+    left: -20px; /* Adjust the position for smaller screens */
+    height: 100%; /* Ensure dotted line height fits the container */
+  }
+  
+  .exp-card-timeline {
+    margin: 0 0 20px 20px;
+  }
+  
+  .exp-card-timeline::before {
     width: 10px;
     height: 10px;
-  } */
+    left: -25px;
+  }
+  
+  .projectcontent {
+    margin: 5px;
+    font-size: 12px;
+  }
+  
+  .projectname {
+    font-size: 14px;
+  }
+  
+  .timing,
+  .ghub {
+    font-size: 12px;
+  }
+}
