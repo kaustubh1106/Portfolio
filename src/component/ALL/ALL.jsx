@@ -1,5 +1,6 @@
 import React, { useState, useEffect,useCallback } from 'react'
 import githublink from "../../asset/link.svg"
+import { Link } from 'react-scroll';
 
 import projectjson from "./project.json"
 import expjson from "./experience.json"
@@ -88,7 +89,7 @@ const ALL = () => {
                                 <p className="projectname">{project.name}</p>
                                 <p className="timing">{project.tech}</p>
                                 <p className="ghub">
-                                    <img src={githublink} className="fa-solid fa-link" alt=""></img>Github Link
+                                    <img src={githublink} className="fa-solid fa-link" alt=""></img><a href={`${project.demo}` } >Github Link </a>
                                 </p>
 
                             </div>
