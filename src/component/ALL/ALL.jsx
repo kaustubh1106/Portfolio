@@ -1,6 +1,5 @@
 import React, { useState, useEffect,useCallback } from 'react'
 import githublink from "../../asset/link.svg"
-import { Link } from 'react-scroll';
 
 import projectjson from "./project.json"
 import expjson from "./experience.json"
